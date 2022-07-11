@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  http://www.springframework.org/schema/beans/spring-beans.xsd 
+  http://www.springframework.org/schema/context/ 
+  http://www.springframework.org/schema/context/spring-context.xsd">
+      <bean id="emp" class="com.chainsys.springprojecta.beans.Employee" />
+      <bean id="c1" class="com.chainsys.springprojecta.beans.Customer" lazy-init="true" />
+      <bean id="act" class="com.chainsys.springprojecta.beans.Actor" scope="prototype" />
+      <bean id="film" class="com.chainsys.springprojecta.beans.Movie" >
+      <constructor-arg type="java.lang.String" value="BATMAN" />
+      <constructor-arg type="java.lang.String" value="Matt Reeves" />
+      </bean>
+      <bean id="sb1" class="com.chainsys.springprojecta.beans.ScoreBoard" factory-method="createObject" scope="prototype"/>
+      <bean id="sb2" class="com.chainsys.springprojecta.beans.ScoreBoard" factory-method="createObject" scope="prototype" >
+          <constructor-arg type="int" value="366" />
+          </bean>
+          <bean id="calender" class="com.chainsys.springprojecta.beans.Calender" factory-method="createCalender"
+          factory-bean="cfactory" />
+          <bean id="cfactory" class="com.chainsys.springprojecta.beans.CalenderFactory"  />
+          <bean id="appointments" class="com.chainsys.springprojecta.beans.Appointments"  factory-method="createAppointments"
+          factory-bean="cfactory" />
+          
+  </beans>

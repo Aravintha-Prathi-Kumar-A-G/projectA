@@ -1,0 +1,34 @@
+Introduction Spring Framework.
+OOPS best practices"
+Dependency Injection 
+    Constructor Based Injection 
+    Setter Based Injection
+Bean Configuration File
+Spring IoC Container
+BeanFactory 
+ApplicationContext 
+Bean Definition
+Bean Scopes (singleton,Prototype,Request,session,global session)
+Bean Initialization-Eager vs Lazy
+@Configuration 
+@Bean
+Bean Lifecycle 
+Bean Post Processors -init,destroy 
+InitializingBean 
+DisposableBean  
+@Autowired Stereotype
+------------------------------------------------
+Annotation(@Service,@Repository,@Component) 
+@Qualifier 
+@SpringBootApplication 
+@Value 
+@RestController 
+Spring Boot Starter Template - start. 
+spring.io
+application.properties
+@RequestParam
+@RequestMapping
+@GetMapping,@PostMapping,@PutMapping,@DeleteMapping
+CRUDRepository
+@Query
+DataSourceautoConfiguration - Spring Boot"

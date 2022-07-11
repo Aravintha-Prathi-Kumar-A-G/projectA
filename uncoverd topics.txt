@@ -1,0 +1,17 @@
+@Query
+@Modifying
+@Param
+------------------------
+Transaction Management
+Programmatic Transaction Management
+Declarative Transaction Management
+@EnableTransationManagement
+@Transactional
+------------------------
+Model View Controller(MVC)
+@RequestBody
+@ResponseBody
+@PathParam
+DispatcherServlet
+ViewResolver
+HandlerMapping
